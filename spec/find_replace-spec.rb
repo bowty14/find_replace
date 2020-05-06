@@ -1,8 +1,8 @@
 require ('pry')
-require ('find_replace')
+require ('find_replace_script')
 
-describe("Find_replace#") do
-  it('')do
-    expect().to(eq())
+describe("") do
+  it('takes in a string from user and stores it in a variable')do
+    expect(user_entry).to(eq("hello world"))
   end
 end
