@@ -14,4 +14,8 @@ describe("Find_replace_word#find_replace") do
     findword = Find_replace_word.new("I am walking my cat to the Cathedral", "cat", "dog")
     expect(findword.word_replacer()).to(eq("I am walking my dog to the Cathedral"))
   end
+  it("will replace the entire inputted phrase for a new word or new phrase") do 
+    findword = Find_replace_word.new("hello world", "hello world", "Hello, to all of my wonderful instructors!")
+    expect(findword.word_replacer()).to(eq('hello'))
+  end
 end
