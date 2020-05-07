@@ -8,7 +8,7 @@ class Find_replace_word
   @replace_word = replace_word
   end
 
-  def Find_replace 
+  def find_replace 
     @user_entry.include? @find_word
   end
 
@@ -25,8 +25,7 @@ class Find_replace_word
   end
 
   def word_replacer
-    @phrase_string.gsub(/\b#{@find_word}\b/i, @replace_word)
+    @user_entry.gsub(/\b#{@find_word}\b/i, @replace_word)
   end
-
 
 end
