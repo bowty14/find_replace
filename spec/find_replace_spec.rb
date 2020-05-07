@@ -11,7 +11,7 @@ describe("Find_replace_word#find_replace") do
     expect(findword.word_replacer()).to(eq("Hello Universe"))
   end
   it("finds and replaces even partial words") do
-    findword = Find_replace_word.new("I am walking my dog to the Cathedral", "dog", "cat")
-    expect(findword.word_replacer()).to(eq("i"))
+    findword = Find_replace_word.new("I am walking my cat to the Cathedral", "cat", "dog")
+    expect(findword.word_replacer()).to(eq("I am walking my dog to the Cathedral"))
   end
 end
